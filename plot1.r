@@ -3,6 +3,8 @@ setwd("/Users/fredwu/Documents/COURSE")
 data <- read.csv("household_power_consumption.txt", header=T, sep=';', na.strings="?", 
                  stringsAsFactors=F, quote='\"')
 data$Date <- as.Date(data$Date, format="%d/%m/%Y")
+
+## print the first couple of dataframe data
 head(data)
 
 ## Subset the data
